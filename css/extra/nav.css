@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 
 * {
 	box-sizing: border-box;
@@ -14,6 +15,7 @@ nav {
 
 	width: 100vw;
 	height: 3.5rem;
+	z-index: 999999999;
 	padding: 5px;
 
 	background-color: #163a5f;
@@ -27,17 +29,23 @@ nav {
 
 	text-decoration: none;
 	color: white;
+	background-color: #163a5f;
 	border-radius: 0.5rem;
+	font-family: "Source Code Pro", sans-serif;
 }
 
 .nav-link:hover {
 	color: #163a5f;
-	background-color: white;
+	background-color: darkgray;
+}
+
+.nav-button {
+	display: none;
 }
 /* general nav links */
 
 /* Title Style */
-.nav-title:first-of-type {
+.nav-title {
 	margin-right: auto;
 	margin-left: 1.5rem;
 
@@ -47,8 +55,8 @@ nav {
 	text-decoration: none;
 }
 
-.nav-title:first-of-type > span {
-	font-family: Arial, Helvetica, sans-serif;
+.nav-title > span {
+	font-family: "Source Code Pro", sans-serif;
 }
 /* Title Style */
 
@@ -58,3 +66,40 @@ nav {
 	background-color: #45eba5;
 }
 /* current page nav */
+
+/* responsive */
+@media screen and (max-width: 1000px) {
+	.navbar a:not(:first-of-type) {
+		display: none;
+	}
+	.nav-button {
+		display: block;
+		background-color: #163a5f;
+		color: white;
+		border-radius: 0.5rem;
+		margin-right: 1rem;
+	}
+	.nav-button:hover {
+		color: #163a5f;
+		background-color: white;
+	}
+	.nav-title {
+		margin-right: auto;
+	}
+
+	/* showing the links */
+
+	.navbar.responsive {
+		flex-direction: column;
+		justify-content: flex-start;
+		margin: 0;
+		height: fit-content;
+	}
+
+	.navbar.responsive .nav-link {
+		display: block;
+		width: 100%;
+		border-radius: 0;
+		margin: 0;
+	}
+}

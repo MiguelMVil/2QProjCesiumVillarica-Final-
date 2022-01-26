@@ -1,16 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
 :root {
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
 
 	/* custom scrollbars for firefox */
 	scrollbar-width: thin;
-	scrollbar-color: blue #fff;
+	scrollbar-color: #45eba5 #fff;
+}
+
+html {
+	width: 100%;
+	height: 100%;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+
+	width: 100%;
+	height: 100%;
 
 	color: #000000;
 	background-color: #ffffff;
@@ -23,10 +33,49 @@ body::-webkit-scrollbar-track {
 	background-color: white;
 }
 body::-webkit-scrollbar-thumb {
-	background-color: blue;
+	background-color: #45eba5;
 }
 
+/* styling rules */
+
+.gradient {
+	background-image: linear-gradient(45deg, #163a5f, #45eba5);
+	background-clip: text;
+	color: transparent;
+}
+
+/* styling rules  */
+
 main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	margin-top: 3.5rem;
 	width: 100%;
 }
+
+/* intro-styles */
+
+.home-intro {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.intro-img {
+	width: min(45rem, 45vw);
+}
+
+.intro-text {
+	font-family: "Source Code Pro", sans-serif;
+	padding: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+	.home-intro {
+		flex-direction: column;
+	}
+}
+
+/* intro-styles */
