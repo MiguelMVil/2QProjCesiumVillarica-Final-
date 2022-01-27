@@ -5,6 +5,8 @@
 	box-sizing: border-box;
 }
 
+/* !regular screen nav */
+/* layout and sizing of main bar */
 nav {
 	display: flex;
 	align-items: center;
@@ -15,6 +17,7 @@ nav {
 
 	width: 100vw;
 	height: 3.5rem;
+	/* *Makes sure nav is always on top */
 	z-index: 999999999;
 	padding: 5px;
 
@@ -34,17 +37,13 @@ nav {
 	font-family: "Source Code Pro", sans-serif;
 }
 
+/* nav link hover effect */
 .nav-link:hover {
 	color: #163a5f;
 	background-color: darkgray;
 }
 
-.nav-button {
-	display: none;
-}
-/* general nav links */
-
-/* Title Style */
+/* nav title styling */
 .nav-title {
 	margin-right: auto;
 	margin-left: 1.5rem;
@@ -54,50 +53,70 @@ nav {
 	color: white;
 	text-decoration: none;
 }
-
+/* for "ProAct" part of title */
 .nav-title > span {
 	font-family: "Source Code Pro", sans-serif;
 }
-/* Title Style */
 
-/* current page nav */
+/* styles link of current page */
 .nav-link.current-page {
 	color: #163a5f;
 	background-color: #45eba5;
 }
-/* current page nav */
 
-/* responsive */
+/* menu button with large screen */
+.nav-button {
+	display: none;
+}
+
+/* !small screen nav */
 @media screen and (max-width: 1000px) {
+	/* prevents title removal */
 	.navbar a:not(:first-of-type) {
 		display: none;
 	}
+
+	/* displays nav button  */
 	.nav-button {
 		display: block;
-		background-color: #163a5f;
-		color: white;
 		border-radius: 0.5rem;
 		margin-right: 1rem;
+
+		color: white;
+		background-color: #163a5f;
 	}
+
+	/* hover effect of button */
 	.nav-button:hover {
 		color: #163a5f;
 		background-color: white;
 	}
+
+	/* places button at top right */
 	.nav-title {
 		margin-right: auto;
 	}
 
-	/* showing the links */
+	/* !BELOW: styles for when after nav-btn is clicked */
 
+	/* centers title when menu open */
+	.navbar.responsive .nav-title {
+		margin-left: auto;
+	}
+
+	/* stacks the links below the title */
 	.navbar.responsive {
 		flex-direction: column;
 		justify-content: flex-start;
+
 		margin: 0;
 		height: fit-content;
 	}
 
+	/* displays the stacked links */
 	.navbar.responsive .nav-link {
 		display: block;
+
 		width: 100%;
 		border-radius: 0;
 		margin: 0;
