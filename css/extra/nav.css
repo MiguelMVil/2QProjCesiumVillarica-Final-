@@ -81,6 +81,8 @@ nav {
 		display: block;
 		border-radius: 0.5rem;
 		margin-right: 1rem;
+		border-width: 0px;
+		padding: 0.5rem;
 
 		color: white;
 		background-color: #163a5f;
