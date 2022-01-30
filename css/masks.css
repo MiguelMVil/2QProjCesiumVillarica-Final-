@@ -1,0 +1,34 @@
+/* !intro styling */
+.mask-intro {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+
+	width: 100%;
+	padding: 12rem;
+
+	background-image: url("../resources/images/masks-img.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.intro-text {
+	width: 50%;
+	padding: 1.5rem;
+	font-size: 1.2rem;
+}
+
+.intro-text > h1 {
+	font-size: 2rem;
+}
+
+/* !masks-intro: small screens */
+@media screen and (max-width: 1000px) {
+	.mask-intro {
+		justify-content: center;
+	}
+
+	.intro-text {
+		width: fit-content;
+	}
+}
