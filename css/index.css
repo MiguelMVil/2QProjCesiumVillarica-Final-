@@ -52,11 +52,6 @@
 	font-size: 1.7rem;
 }
 
-.yt-video {
-	width: 80vw;
-	height: 45vw;
-}
-
 /* !topic previews */
 .topic-previews {
 	display: flex;

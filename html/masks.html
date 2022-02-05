@@ -11,8 +11,10 @@
     <!-- links to other files -->
     <link rel="stylesheet" href="../css/masks.css">
     <link rel="stylesheet" href="../css/extra/constant.css">
+    <link rel="stylesheet" href="../css/extra/quiz.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="../javascript/nav.js" defer></script>
+    <script src="../javascript/maskQuiz.js" defer></script>
 
     <link rel="icon" href="../resources/images/websiteLogo.svg">
     <title>COVID ProAct: Masks</title>
@@ -30,17 +32,164 @@
         </button>
     </nav>
 
-    <main>
+    <main id="main">
         <section class="mask-intro">
             <article class="intro-text">
                 <h1 class="gradient">Our Wearable Protection</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ad similique. Sapiente, aperiam!
-                    Repudiandae blanditiis quia sint quos ratione excepturi vitae, deleniti tempore! Non officia rem,
-                    molestias nisi quisquam quasi velit minus voluptates illum delectus, numquam necessitatibus veniam
-                    est voluptas tenetur ea unde eveniet dicta? Itaque repellat officiis praesentium ex?</p>
+                <p>
+                    Face masks are one of the most recognizable and memorable measures put in place by governments
+                    around the world to counteract the virus. Our government has placed many guidelines and protocols
+                    when it comes to these masks.These guidelines also include where, when, and how these masks should
+                    be worn. Additionally, the Philippine government has also required the use of face shields on top of
+                    masks.
+                </p>
             </article>
         </section>
 
+        <section class="mask-types-header">
+            <article class="mask-types-header-text">
+                <h2 class="gradient">How do we use masks to protect ourselves?</h2>
+                <p>
+                    There are many guidelines to when, how, and where masks should be worn in public. In general,
+                    however, masks should always be worn in public spaces. This is especially true when indoors, because
+                    of the lower air circulation. The masks block virus particles in the air that may infect you if not
+                    blocked by the mask.
+                    <br><br>
+                    On the other hand, if you are sick, the mask will greatly help prevent you from spreading infection.
+                    By wearing it, you protect everybody around you including yourself. To demonstrate this, a video
+                    from <strong>The Washington Post</strong> shows how particles are blocked and absorbed by masks.
+                </p>
+
+
+            </article>
+            <iframe class="yt-video" src="https://www.youtube.com/embed/xEp-Sdgl9AU?&autoplay=1&mute=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+        <section class="mask-list">
+            <h2 class="gradient">Different Types of Masks</h2>
+            <article class="list-text">
+                <div class="mask-type-holder">
+                    <img src="../resources/images/maskPage/surgical-mask.png" alt="Surgical mask" class="list-img">
+                    <p>
+                        To the left, you can see an image of a surgical mask. These are one of the most common masks
+                        worn by
+                        people, especially in the Philippines. They provide sufficient protection if worn properly.
+                        Protection while wearing these masks can be improved if the wearer wears more than one mask and
+                        wears many layers of protection. Additionally, these masks are one of the preferred masks of
+                        surgeons and medical professionals for civilians to wear.
+                    </p>
+                </div>
+
+                <div class="mask-type-holder">
+                    <p>
+                        Moving on, we see pictures of cloth masks. These masks can protect you from COVID 19, but there
+                        are
+                        some consideration that you need to make when choosing to wear a cloth mask. These
+                        considerations
+                        include making sure the mask has two layers of fabric, ensuring a tight fit on your face, and
+                        using
+                        a suitable mask material.
+                    </p>
+                    <img src="../resources/images/maskPage/cloth-mask.png" alt="Cloth Mask" class="list-img">
+                </div>
+
+                <div class="mask-type-holder">
+                    <img src="../resources/images/maskPage/n95-mask.png" alt="N95 Mask" class="list-img">
+                    <p>
+                        Moving on, we now look at N95 masks. These types of masks provide great protection. However,
+                        these are <strong>not recommended for use</strong> by regular civilians. According to the CDC,
+                        these masks should be prioritized for the use of medical professionals, especially if the mask
+                        is labelled 'surgical N95'.
+                    </p>
+                </div>
+
+                <div class="mask-type-holder">
+                    <p>
+                        According to the CDC, face shields alone are not recommended as a replacement for masks They
+                        have very large gaps and let a lot of outside air in. This is to be expected, as they are
+                        primarily meant for protection of the eyes and face. However, they still have their uses during
+                        this pandemic. They can especially be used as an addition to masks or for people who have
+                        medical issues that make wearing masks hard.
+                    </p>
+                    <img src="../resources/images/maskPage/face-shield.png" alt="Face shield" class="list-img">
+                </div>
+            </article>
+        </section>
+
+        <article class="extra-tips">
+            <h2 class="gradient">CDC: Extra Tips</h2>
+            <p>Here are some extra tips straight from the CDC: </p>
+            <br><br>
+            <ol>
+                <li>Make sure to wear your masks in public! Especially if you have a medical condition, masks are an
+                    important layer of self-protection against getting the virus.
+                </li>
+                <li>Make sure your masks fit snugly and properly. Make sure there are no gaps where air can leak out,
+                    and that your nose is inside the mask.
+                </li>
+                <li>Remember that you can adjust your mask within certain limits for comfort. If there are any problems
+                    with the fit of your mask, you can adapt and adjust. You can wear multiple layers, wear mask braces,
+                    or even tie the straps to find that perfect fit!
+                </li>
+            </ol>
+        </article>
+
+        <article class="summary">
+            <h2 class="gradient">Summary</h2>
+
+            <p>Now that you know about the different types of masks, I hope that you can make an informed decision about
+                how to protect yourself against COVID. Along with other proactive measures, masks can really play a huge
+                part in protecting you if you use them properly. Wear them properly, wear the right ones, and wear them
+                whenever you need to. As always, remember to be safe and proactive when it comes to your health!</p>
+        </article>
+
+        <!-- !Quiz starts below -->
+        <section class="quiz-container" id="quiz-container">
+            <div id="item-container" class="hide">
+                <div class="quiz-stats">
+                    <div id="checker" class="checker">Checking...</div>
+                    <div id="score" class="score">0</div>
+                </div>
+                <!-- Holds the question. Text supplied in javascript -->
+                <div id="question" class="question"></div>
+                <!-- Answer buttons. Answers supplied in javascript -->
+                <div id="ans-btns" class="btn-grid">
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                </div>
+            </div>
+            <!-- Quiz controls -->
+            <article id="start-text" class="start-text">
+                <h1 class="start-msg">
+                    Take this quiz about masks to test your knowledge and see what you've learned from the site!
+                </h1>
+            </article>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+                <button id="end-btn" class="end-btn btn hide">Finish Quiz</button>
+            </div>
+            <article id="end-text" class="end-text hide">
+                <h1 class="end-msg">Thank you for answering this quiz. I hope you learned something from this website!
+                </h1>
+                <h2 class="final-score" id="final-score"></h2>
+            </article>
+        </section>
+
+        <section class="references">
+            <h2 class="gradient">References</h2>
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html">Your
+                Guide to Masks - CDC</a>
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html">COVID-19:
+                Considerations for Wearing Masks</a>
+            <a href="https://www.pexels.com/">Images Taken from Pexels</a>
+            <a href="https://fonts.google.com/">Fonts Taken from Google Fonts</a>
+        </section>
     </main>
 
     <footer>
