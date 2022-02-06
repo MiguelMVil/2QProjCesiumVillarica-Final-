@@ -11,8 +11,6 @@ const ansBtns = document.getElementById("ans-btns")
 const endText = document.getElementById("end-text")
 const endScore = document.getElementById("final-score")
 
-const mainContent = document.getElementById("main")
-
 let shuffledQs, currentQIndex, score
 
 startBtn.addEventListener("click", () => {
@@ -121,21 +119,53 @@ function addScore(correct) {
 
 const questions = [
 	{
-		question: "What is 7 - 6",
+		question: "The most commonly seen masks that civilians wear are?",
 		answers: [
-			{ text: "3", correct: false },
-			{ text: "1", correct: true },
-			{ text: "4", correct: false },
-			{ text: "5", correct: false },
+			{ text: "Face Shields", correct: false },
+			{ text: "Surgical Masks", correct: true },
+			{ text: "Cloth Masks", correct: false },
+			{ text: "N95 Masks", correct: false },
 		],
 	},
 	{
-		question: "What is 1+1",
+		question:
+			"When wearing cloth masks, you must always make sure that your mask ______",
 		answers: [
-			{ text: "4", correct: false },
-			{ text: "2", correct: true },
-			{ text: "8", correct: false },
-			{ text: "3", correct: false },
+			{ text: "is soaked with alcohol", correct: false },
+			{ text: "has a tight fit on your face", correct: true },
+			{
+				text: "has breathing holes for your nose and mouth",
+				correct: false,
+			},
+			{ text: "has only one layer for breathability", correct: false },
+		],
+	},
+	{
+		question: "The inner part of a surgical mask is ______",
+		answers: [
+			{ text: "absorbent", correct: true },
+			{ text: "waterproof", correct: false },
+			{ text: "the same material as the outer part", correct: false },
+			{ text: "for comfort when contacting skin", correct: false },
+		],
+	},
+	{
+		question:
+			"For maximum protection, make sure that your ______ and mouth is covered by the mask",
+		answers: [
+			{ text: "jawline", correct: false },
+			{ text: "chin", correct: false },
+			{ text: "nose", correct: true },
+			{ text: "ears", correct: false },
+		],
+	},
+	{
+		question: "If your mask is very uncomfortable, you can:",
+		answers: [
+			{ text: "live with the discomfort", correct: false },
+			{ text: "take it off quickly", correct: false },
+			{ text: "adjust for comfort", correct: true },
+			{ text: "cut breathing holes", correct: false },
 		],
 	},
 ]

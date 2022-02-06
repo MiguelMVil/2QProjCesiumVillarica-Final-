@@ -90,6 +90,19 @@
 	align-items: center;
 }
 
+/* !mask-type-holder, small screens */
+@media screen and (max-width: 1000px) {
+	.list-img {
+		width: 70vw;
+	}
+
+	.mask-type-holder {
+		flex-direction: column;
+
+		margin: 1rem;
+	}
+}
+
 /* !extra-tips */
 .extra-tips {
 	display: flex;
