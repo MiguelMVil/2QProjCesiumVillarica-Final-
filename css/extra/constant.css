@@ -256,3 +256,7 @@ footer a:nth-of-type(3) {
 	width: 32px;
 	height: 33px;
 }
+
+footer a:hover {
+	transform: scale(95%);
+}
