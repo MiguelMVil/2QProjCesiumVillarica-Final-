@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Miguel Villarica">
+    <meta name="keywords" content="">
+    <meta name="revised" content="">
+
+    <!--stylesheets-->
+    <link rel="stylesheet" href="../css/hygiene.css">
+    <link rel="stylesheet" href="../css/extra/constant.css">
+    <link rel="stylesheet" href="../css/extra/quiz.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="nav.js" defer></script>
+    <script src="../javascript/hygieneQuiz.js" defer></script>
+
+    <link rel="icon" href="../resources/images/websiteLogo.svg">
+    <title>COVID ProAct: General Hygiene</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="nav-title">COVID <span>ProAct</span> </a>
+        <a href="masks.html" class="nav-link">Masks</a>
+        <a href="distance.html" class="nav-link">Social Distancing</a>
+        <a href="quarantine.html" class="nav-link">Quarantines</a>
+        <a href="hygiene.html" class="nav-link current-page">General Hygiene</a>
+        <button class="nav-button" onclick="openNav()">
+            <span class="material-icons nav-btn-icon">menu</span>
+        </button>
+    </nav>
+
+    <main>
+        <section class="clean-intro">
+            <article class="intro-text">
+                <h1 class="gradient">Cleanliness is Key</h1>
+                <p>
+                    Being clean is a good practice to have at all times. However, especially during COVID, there are
+                    times where it's even more important. Being clean can be a huge part of keeping yourself and others
+                    safe from the virus.
+                    <br><br>
+                    Read on to learn more about the ways being clean can protect you, as well as ways that work best
+                    against COVID-19.
+                </p>
+            </article>
+        </section>
+
+        <section class="clean-video">
+            <article class="video-text">
+                <h2 class="gradient">How does keeping clean help me?</h2>
+                <p>
+                    Keeping clean can protect yourself and others from the virus. One particular way that this is seen
+                    is in sanitizing surfaces, uncluding our own bodies. You see, the virus can also spread from the
+                    particles that stick on surfaces. By cleaning these, the virus gets eliminated before anyone gets
+                    infected. Here's a short video from the <strong>WHO</strong> that shows how to wach your hands
+                    properly:
+                </p>
+            </article>
+            <iframe src="https://www.youtube.com/embed/3PmVJQUCm4E?&autoplay=1&mute=1" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="yt-video">
+            </iframe>
+        </section>
+
+        <article class="other-ways">
+            <h2 class="gradient">How else can I stay clean and protected?</h2>
+            <p>There are many other ways to protect yourself by being clean. This is a list of some of the most
+                important </p>
+            <br><br>
+            <ol>
+                <li>Never cough in your hands. This is because you touch everything with them and you might contaminate
+                    things.
+                </li>
+                <li>
+                    Don't touch your face since you have a higher chance to get sick if your hands were contaminated
+                </li>
+                <li>
+                    Wash your hands regularly to keep dirt and viruses of them
+                </li>
+                <li>
+                    Disinfect things before you bring them into your house
+                </li>
+                <li>
+                    If coming from outside, try to change clothes before entering your house to keep anything that stuck
+                    to your clothes outside.
+                </li>
+            </ol>
+        </article>
+
+        <article class="summary">
+            <h2 class="gradient">Summary</h2>
+
+            <p>Now that you know some ways to be clean and protected, you can better protect yourself from the virus.
+                Note that these are only some of the many things that you can do to be clean and healthy!
+
+            </p>
+        </article>
+
+        <section class="quiz-container" id="quiz-container">
+            <div id="item-container" class="hide">
+                <div class="quiz-stats">
+                    <div id="checker" class="checker">Checking...</div>
+                    <div id="score" class="score">0</div>
+                </div>
+                <!-- Holds the question. Text supplied in javascript -->
+                <div id="question" class="question"></div>
+                <!-- Answer buttons. Answers supplied in javascript -->
+                <div id="ans-btns" class="btn-grid">
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                </div>
+            </div>
+            <!-- Quiz controls -->
+            <article id="start-text" class="start-text">
+                <h1 class="start-msg">
+                    Take this quiz about masks to test your knowledge and see what you've learned from the site!
+                </h1>
+            </article>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+                <button id="end-btn" class="end-btn btn hide">Finish Quiz</button>
+            </div>
+            <article id="end-text" class="end-text hide">
+                <h1 class="end-msg">Thank you for answering this quiz. I hope you learned something from this website!
+                </h1>
+                <h2 class="final-score" id="final-score"></h2>
+            </article>
+        </section>
+
+        <section class="references">
+            <h2 class="gradient">References</h2>
+            <a
+                href="https://www.unicef.org/mena/stories/cleaning-and-hygiene-tips-help-keep-covid-19-virus-out-your-home">Cleaning
+                and hygiene tips to help keep the COVID-19 virus out of your home </a>
+            <a href="https://www.youtube.com/watch?v=3PmVJQUCm4E">WHO: How to handwash? With soap and water</a>
+            <a href="https://www.pexels.com/">Images Taken from Pexels</a>
+            <a href="https://fonts.google.com/">Fonts Taken from Google Fonts</a>
+        </section>
+    </main>
+
+    <footer>
+        <h3 class="copyright">
+            Copyright © M. Villarica 9-Cesium
+        </h3>
+        <div class="social-container">
+            <a href="https://github.com/MiguelMVil"></a>
+            <a href="https://www.facebook.com/miguel.villarica.523/"></a>
+            <a href="https://discord.gg/FzJuDTVM"></a>
+        </div>
+    </footer>
+
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>

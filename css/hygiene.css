@@ -1,0 +1,99 @@
+/* !intro styling */
+.clean-intro {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+
+	width: 100%;
+	padding: 12rem;
+
+	background-image: url("../resources/images/hygiene-img.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.intro-text {
+	width: 50%;
+	padding: 1.5rem;
+	font-size: 1.2rem;
+}
+
+.intro-text > p {
+	color: white;
+}
+
+.intro-text > h1 {
+	font-size: 2rem;
+}
+
+/* !masks-intro: small screens */
+@media screen and (max-width: 1000px) {
+	.clean-intro {
+		justify-content: center;
+	}
+
+	.intro-text {
+		width: fit-content;
+	}
+}
+
+/* !video */
+.clean-video {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 100%;
+	height: max-content;
+	padding: 1rem;
+	padding-bottom: 3rem;
+	margin-bottom: 1rem;
+
+	background-color: aliceblue;
+}
+
+.video-text {
+	padding: 1rem;
+	font-size: 1.2rem;
+}
+
+.video-text > h2 {
+	font-size: 1.7rem;
+}
+
+/* !other ways */
+.other-ways {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 60vw;
+	height: max-content;
+}
+
+.other-ways > h2 {
+	font-size: 1.7rem;
+}
+
+.other-ways > p,
+.other-ways > ol {
+	font-size: 1.2rem;
+}
+
+/* !summary */
+.summary {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 60vw;
+	height: max-content;
+}
+
+.summary > h2 {
+	font-size: 1.7rem;
+}
+
+.summary > p {
+	font-size: 1.2rem;
+}
