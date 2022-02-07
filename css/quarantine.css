@@ -1,0 +1,126 @@
+/* !intro styling */
+.quarantine-intro {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+
+	width: 100%;
+	padding: 8rem;
+
+	background-image: url("../resources/images/quarantine-img.jpg");
+	background-position: top;
+	background-size: cover;
+	text-shadow: 3px 0px 3px #fff;
+}
+
+.intro-text {
+	width: 50%;
+	padding: 1.5rem;
+	font-size: 1.2rem;
+}
+
+.intro-text > h1 {
+	font-size: 2rem;
+	text-shadow: none;
+}
+
+/* !intro: small screens */
+@media screen and (max-width: 1000px) {
+	.quarantine-intro {
+		justify-content: center;
+	}
+
+	.intro-text {
+		width: fit-content;
+	}
+}
+
+/* !explanation */
+.quarantine-explain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 100%;
+	height: max-content;
+	padding: 1rem;
+	padding-bottom: 3rem;
+	margin-bottom: 1rem;
+}
+
+.explain-text {
+	padding: 1rem;
+	font-size: 1.2rem;
+}
+
+.explain-text > h2 {
+	font-size: 1.7rem;
+}
+
+/* !quarantine-video */
+.quarantine-video {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 100%;
+	height: max-content;
+	padding: 1rem;
+	padding-bottom: 3rem;
+	margin-bottom: 1rem;
+
+	background-color: aliceblue;
+}
+
+.video-text {
+	padding: 1rem;
+	font-size: 1.2rem;
+}
+
+.video-text > h2 {
+	font-size: 1.7rem;
+}
+
+/* !meaning */
+.quarantine-meaning {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 100%;
+	height: max-content;
+	padding: 1rem;
+	padding-bottom: 3rem;
+	margin-bottom: 1rem;
+}
+
+.meaning-text {
+	padding: 1rem;
+	font-size: 1.2rem;
+}
+
+.meaning-text > h2 {
+	font-size: 1.7rem;
+}
+
+.quarantine-meaning > img {
+	width: 70vw;
+}
+
+/* !summary */
+.summary {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 60vw;
+	height: max-content;
+}
+
+.summary > h2 {
+	font-size: 1.7rem;
+}
+
+.summary > p {
+	font-size: 1.2rem;
+}

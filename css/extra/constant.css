@@ -225,15 +225,33 @@ footer {
 	color: #fff;
 }
 
-footer > a {
-	text-decoration: none;
-	color: #0066cc;
-
-	background-color: #45eba5;
-	padding: 0.5rem;
-	border-radius: 0.2rem;
+.social-container {
+	display: flex;
+	width: max-content;
+	align-items: center;
+	justify-content: center;
 }
 
-footer > a:hover {
-	transform: scale(95%);
+footer a:nth-of-type(1) {
+	display: block;
+	background: url("../../resources/images/icon-sprite.jpg") no-repeat 80.282%
+		70.492%;
+	width: 32px;
+	height: 33px;
+}
+
+footer a:nth-of-type(2) {
+	display: block;
+	background: url("../../resources/images/icon-sprite.jpg") no-repeat 39.859%
+		70.109%;
+	width: 33px;
+	height: 32px;
+}
+
+footer a:nth-of-type(3) {
+	display: block;
+	background: url("../../resources/images/icon-sprite.jpg") no-repeat 9.683%
+		70.492%;
+	width: 32px;
+	height: 33px;
 }

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Miguel Villarica">
+    <meta name="keywords" content="COVID, Protection, quarantine">
+
+    <!--stylesheets-->
+    <link rel="stylesheet" href="../css/quarantine.css">
+    <link rel="stylesheet" href="../css/extra/constant.css">
+    <link rel="stylesheet" href="../css/extra/quiz.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../javascript/nav.js" defer></script>
+    <script src="../javascript/quarantineQuiz.js" defer></script>
+
+    <link rel="icon" href="../resources/images/websiteLogo.svg">
+    <title>COVID ProAct: Quarantines</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="nav-title">COVID <span>ProAct</span> </a>
+        <a href="masks.html" class="nav-link">Masks</a>
+        <a href="distance.html" class="nav-link">Social Distancing</a>
+        <a href="quarantine.html" class="nav-link current-page">Quarantines</a>
+        <a href="hygiene.html" class="nav-link">General Hygiene</a>
+        <button class="nav-button" onclick="openNav()">
+            <span class="material-icons nav-btn-icon">menu</span>
+        </button>
+    </nav>
+
+    <main>
+        <section class="quarantine-intro">
+            <article class="intro-text">
+                <h1 class="gradient">The Collective Lockdown</h1>
+                <p>
+                    To many, this part of protection agains the virus is what affected them the most. With the numerous
+                    different names and implementations of this group of concepts, it's confusing for many to define
+                    what quarantines are and why we are even doing them.
+                    <br><br>
+                    In this page, you'll learn about quarantines,
+                    isolation, and related topics so that you can get a better idea of what they actually are and why
+                    they're affecting your life so much.
+                </p>
+            </article>
+        </section>
+
+        <section class="quarantine-explain">
+            <article class="explain-text">
+                <h2 class="gradient">What even is a quarantine?</h2>
+                <p>
+                    In this day and age, the word "quarantine" is thrown around a lot as an umbrella term for the
+                    lockdowns, isolation, and actual quarantine. To make it clear, a quarantine is used to restrict the
+                    movement of people who <strong>may be sick.</strong> Note that it doesn't mean that all the people
+                    in quarantine are sick. Rather, it means that they all have the potential to be sick and spread, as
+                    to why they have to remain home. In short, they remain home to protect themselves and the people
+                    around them.
+                </p>
+            </article>
+        </section>
+
+        <section class="quarantine-video">
+            <article class="video-text">
+                <h2 class="gradient">Quarantine vs Isolation</h2>
+                <p>
+                    Few people may know that quarantines and isolation are not the same thing. As mentioned, a
+                    quarantine is when you're not actually sick, but you still have to stay home. Isolation on the other
+                    hand, means that you are actually sick. As the name suggests, you isolate yourself almost completely
+                    from other people. The difference between these two are discussed in this video from the
+                    <strong>CDC: </strong>
+                </p>
+            </article>
+            <iframe src="https://www.youtube.com/embed/l3s75_X8Xjs?&autoplay=1&mute=1" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="yt-video">
+            </iframe>
+        </section>
+
+        <section class="quarantine-meaning">
+            <article class="meaning-text">
+                <h2 class="gradient">What does this mean for me?</h2>
+                <p>
+                    There are many things that can happen as we are in quarantine. One major thing is that people will
+                    be primarily staying home. Everything from work to school to family gatherings will likely have to
+                    be moved to your home. This will mean that you have to find new ways to connect with people,
+                    primarily online. Most of your purchases and essentials will come from online as well. With the rise
+                    of online shopping and groceries, expect to likely be having a lot of things delivered instead of
+                    going out to get them yourself.
+                </p>
+            </article>
+            <img src="../resources/images/quarantinePage/online-shopping.jpg" alt="Online Shopping">
+        </section>
+
+
+        <article class="summary">
+            <h2 class="gradient">Summary</h2>
+            <p>
+                To summarize, quarantines and isolation are a huge part of the pandemic we live in. To some people, they
+                are the worst part of the whole experience. However, it is important to understand how useful these
+                things can be at preventing infection. If no one made contact, no one could get sick. That said, I hope
+                that learning more about these things can help you understand them more and make it easier to accept and
+                live with them.
+            </p>
+        </article>
+
+        <!-- !Quiz starts below -->
+        <section class="quiz-container" id="quiz-container">
+            <div id="item-container" class="hide">
+                <div class="quiz-stats">
+                    <div id="checker" class="checker">Checking...</div>
+                    <div id="score" class="score">0</div>
+                </div>
+                <!-- Holds the question. Text supplied in javascript -->
+                <div id="question" class="question"></div>
+                <!-- Answer buttons. Answers supplied in javascript -->
+                <div id="ans-btns" class="btn-grid">
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                </div>
+            </div>
+            <!-- Quiz controls -->
+            <article id="start-text" class="start-text">
+                <h1 class="start-msg">
+                    Take this quiz about masks to test your knowledge and see what you've learned from the site!
+                </h1>
+            </article>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+                <button id="end-btn" class="end-btn btn hide">Finish Quiz</button>
+            </div>
+            <article id="end-text" class="end-text hide">
+                <h1 class="end-msg">Thank you for answering this quiz. I hope you learned something from this website!
+                </h1>
+                <h2 class="final-score" id="final-score"></h2>
+            </article>
+        </section>
+
+        <section class="references">
+            <h2 class="gradient">References</h2>
+            <a href="https://www.cdc.gov/quarantine/index.html">Quarantine and Isolation - CDC</a>
+            <a href="https://www.youtube.com/watch?v=l3s75_X8Xjs">What's the difference between quarantine and
+                isolation?</a>
+            <a href="https://www.pexels.com/">Images Taken from Pexels</a>
+            <a href="https://fonts.google.com/">Fonts Taken from Google Fonts</a>
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <h3 class="copyright">
+            Copyright © M. Villarica 9-Cesium
+        </h3>
+        <a href="html/contact.html">Contact Me</a>
+    </footer>
+</body>
+
+</html>
