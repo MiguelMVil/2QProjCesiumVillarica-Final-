@@ -221,14 +221,15 @@ footer {
 	height: max-content;
 	padding: 1rem;
 
-	background-color: #163a5f;
-	color: #fff;
+	border-top: 1rem solid #163a5f;
+	background-color: #fff;
+	color: #000;
 }
 
 .social-container {
 	display: flex;
 	width: max-content;
-	align-items: center;
+	align-items: space-evenly;
 	justify-content: center;
 }
 
